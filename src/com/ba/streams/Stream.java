@@ -19,6 +19,8 @@ public class Stream {
         return invoices.stream()
                 .<InvoiceItem>flatMap((i) -> i.getItems().stream())
                 .<String>map((InvoiceItem i) -> i.getProduct())
+                .filter(p -> p.startsWith("C"))
+                .map(p -> "Product " + p)
                 .collect(Collectors.<String>toSet());
     }
 
