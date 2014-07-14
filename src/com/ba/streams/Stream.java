@@ -22,6 +22,5 @@ public class Stream {
                 .filter((v) -> v > 4)
                 .limit(4)
                 .collect(Collectors.toList()));
-
     }
 }
