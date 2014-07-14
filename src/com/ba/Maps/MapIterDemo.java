@@ -51,7 +51,7 @@ public final class MapIterDemo {
 
         // Student with specific key
         out.println("Student mit Name " + "Merian " + "ist: " + nachnameMap.get("Merian"));
-        out.println("Student mit Name " + "Herschel " + "ist: " + nachnameMap.get("Herschel"));
+        out.println("Student mit Name " + "Xaver" + " ist: " + nachnameMap.get("Xaver"));
 
         out.println("'Alle Werte der Map:");
         for (final Student s : nachnameMap.values()) {
