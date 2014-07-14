@@ -8,6 +8,6 @@ public class Stream {
         java.util.stream.Stream.generate(() -> new Random().nextInt(100))
                 .filter(i -> i % 2 == 0)
                 .map(i -> i * i)
-                .forEach(i -> System.out.println(i));
+                .forEach(System.out::println);
     }
 }
