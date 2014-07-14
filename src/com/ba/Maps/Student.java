@@ -1,7 +1,5 @@
 package com.ba.Maps;
 
-import com.sun.istack.internal.NotNull;
-
 public final class Student implements Comparable<Student> {
 
     private final int matrikelnr;
@@ -42,7 +40,7 @@ public final class Student implements Comparable<Student> {
     }
 
     @Override
-    public int compareTo(final @NotNull Student o) {
+    public int compareTo(final Student o) {
         return matrikelnr - o.matrikelnr;
     }
 
